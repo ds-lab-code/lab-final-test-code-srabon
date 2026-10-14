@@ -5,23 +5,24 @@
 
 int main(){
 
-    int loc = -1, n = 10;
+    int loc = -1, n = 5;
     char item[20];
 
-   char str[10][20] = {
-        "Apple",
-        "Banana",
-        "Grape",
-        "Guava",
-        "Jackfruit",
-        "Lemon",
-        "Mango",
-        "Orange",
-        "Papaya",
-        "Pineapple"
-   };
+   char str[10][20];
 
-   printf("Enter string to delete: ");
+   //taking input from user
+   printf("Enter String: ");
+   for(int i=0; i<n; i++){
+    scanf("%s", str[i]);
+   }
+
+   //printing the inputed value
+   printf("Input String = ");
+   for(int i=0; i<n; i++){
+    printf("%s ", str[i]);
+   }
+
+   printf("\nEnter string to delete: ");
    scanf("%s", item);
 
    //findig the location for item
